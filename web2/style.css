@@ -178,6 +178,21 @@ body {
     margin-right: 20px;
 }
 
+.viwe-all {
+    width: 230px;
+    height: 64px;
+    padding-top: 5px;
+    background-color: #00b894;
+    text-align: center;
+    margin-left: 65%;
+    margin-top: 20px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: large;
+    font-weight: bolder;
+}
+
 /* footer */
 footer {
     background: #111;
@@ -310,5 +325,99 @@ footer {
     .social-icon a,
     .s-icon {
         margin-left: 5px;
+    }
+
+    .viwe-all {
+        display: none;
+    }
+}
+
+/* ---------media queries
+------------------------------- */
+/* -----------------------------tablet devies--------- */
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .head-content {
+        width: 734px;
+        height: 398px;
+    }
+
+    .content {
+        width: 316px;
+        font-size: medium;
+        text-align: left;
+        margin-left: 11%;
+        margin-top: 30px;
+
+    }
+
+    .head-content {
+        margin: auto;
+    }
+
+    .content h1 {
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    #image img {
+        height: 324px;
+    }
+
+    #image {
+        position: absolute;
+        top: 2%;
+
+    }
+
+    .box-menu {
+        width: 230px;
+        height: 64px;
+        border-radius: 6px;
+        background-color: white;
+        margin: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .box-menu button {
+        padding: 5px 45px;
+        margin: 5px 45px;
+        background-color: #f2f2f2;
+    }
+
+    .box-menu button a {
+        font-size: 15px;
+    }
+
+    .box-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .viwe-all {
+        width: 230px;
+        height: 64px;
+        padding-top: 5px;
+        background-color: #00b894;
+        text-align: center;
+        margin-top: 20px;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: large;
+        font-weight: bolder;
+    }
+}
+
+@media only screen and (min-width:993px) and (max-width:1311px) {
+    .viwe-all {
+        display: none;
     }
 }
